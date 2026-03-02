@@ -1,4 +1,4 @@
-@import url("./reset.css");
+@import url("./normalize.css");
 
 @import url("../font/inter/font.css");
 
@@ -9,9 +9,6 @@
   --red: #ff5555;
   --blue: #5555ff;
   --accent-main: var(--red);
-
-  font-size: 18px;
-  --font-header: "Inter";
 
   --copyright-text: "Copyright 2026 Ocvac";
 
@@ -36,8 +33,8 @@ a {
   display: flex;
   justify-content: center;
   z-index: 100;
-  position: sticky;
-  top: -138px;
+  /* position: sticky;
+  top: -128px; */
   padding: 128px 0 0 0;
 }
 
@@ -54,6 +51,7 @@ a {
   text-transform: uppercase;
   font-weight: 800;
   font-size: 3.6rem;
+  text-align: left;
 }
 
 /* BANNER */
@@ -64,7 +62,7 @@ a {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: calc(var(--content-width) / 10) 0 0 0;
+  padding: calc(var(--content-width) / 8) 0 0 0;
   background-color: #fafafa;
 }
 
@@ -77,33 +75,8 @@ a {
   font-family: "Inter";
 }
 
-.back {
-  text-decoration: underline;
-  color: var(--blue);
-  width: fit-content;
-}
-
 .back::after {
   content: "Back";
-}
-
-p {
-  font-family: "Inter";
-  line-height: 1.6;
-}
-
-h1 {
-  font-family: var(--font-header);
-  font-size: 2rem;
-  border-left: solid 8px var(--accent-main);
-  padding: 0 0 0 12px;
-  margin: 12px 0 0 0;
-}
-
-h2 {
-  font-size: 1.64rem;
-  font-weight: 600;
-  margin: 12px 0 0 0;
 }
 
 iframe {
@@ -113,24 +86,6 @@ iframe {
 
 code {
   background-color: #efefef;
-}
-
-.person {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  margin: 12px 0 12px 0;
-}
-
-.person__pfp {
-  width: 1.86rem;
-  /* border-radius: 50%; */
-}
-
-hr {
-  margin: 24px 0;
-  border-color: #fafafa;
-  opacity: 0.64;
 }
 
 /* CONTENT */
