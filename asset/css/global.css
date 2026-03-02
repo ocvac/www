@@ -88,6 +88,23 @@ code {
   background-color: #efefef;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background-color: #efefef;
+  padding: 4px;
+}
+
+.project {
+  background-color: var(--white);
+  padding: 12px;
+}
+
+.project * {
+  margin: 0;
+}
+
 /* CONTENT */
 
 /* FOOTER */
