@@ -4,19 +4,25 @@
 @import url("../../font/minecraft/font.css");
 
 :root {
-  --header-font: "Minecraft Ten";
-  --main-font: "Minecraft Seven";
+  --font-header: "Minecraft Ten";
+  --font-main: "Minecraft Seven";
+  --font-mono: "Monocraft";
 }
 body {
-  font-family: var(--main-font);
+  font-family: var(--font-main);
 }
 
 h1 {
-  font-family: var(--header-font);
+  font-family: var(--font-header);
   font-weight: 400;
 }
 
 h2 {
-  font-family: var(--header-font);
+  font-family: var(--font-header);
   font-weight: 400;
+}
+
+code {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
 }

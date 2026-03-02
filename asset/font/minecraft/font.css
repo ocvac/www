@@ -7,3 +7,8 @@
   font-family: "Minecraft Ten";
   src: url("./Minecraft-Tenv2.ttf");
 }
+
+@font-face {
+  font-family: "Monocraft";
+  src: url("./minecraft-mono.otf");
+}
