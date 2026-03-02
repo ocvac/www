@@ -1,0 +1,51 @@
+/* MINECRAFT COLORS */
+/* Provided by Ocvac */
+
+/* Based on the Minecraft formatting codes system.
+Read about that at https://minecraft.wiki/w/Formatting_codes */
+
+/* You can link to your css with
+
+@import url("https://ocv.ac/mc-colors");
+
+*/
+
+:root {
+  --mc-black: #000000;
+  --mc-dark_blue: #0000aa;
+  --mc-dark_green: #00aa00;
+  --mc-dark_aqua: #00aaaa;
+  --mc-dark_red: #aa0000;
+  --mc-dark_purple: #aa00aa;
+  --mc-gold: #ffaa00;
+  --mc-gray: #aaaaaa; /* #c6c6c6 on Bedrock Edition */
+  --mc-dark_gray: #555555;
+  --mc-blue: #5555ff;
+  --mc-green: #55ff55;
+  --mc-aqua: #55ffff;
+  --mc-red: #ff5555;
+  --mc-light_purple: #ff55ff;
+  --mc-yellow: #ffff55;
+  --mc-white: #ffffff;
+
+  /* Bedrock exclusive */
+
+  --mc-minecoin_gold: #ddd605; /* yuck */
+
+  --mc-material_quartz: #e3d4d1;
+  --mc-material_iron: #cecaca;
+  --mc-material_netherite: #443a3b;
+  --mc-material_redstone: #971607;
+  --mc-material_copper: #b4684d;
+  --mc-material_gold: #d3b12d;
+  --mc-material_emerald: #119f36;
+  --mc-material_diamond: #2cbaa8;
+  --mc-material_lapis: #21497b;
+  --mc-material_amethyst: #9a5cc6;
+  --mc-material_resin: #eb7114;
+
+  /* Quality of Life */
+  --mc-orange: var(--mc-gold);
+  --mc-gray-bedrock: #c6c6c6;
+  --mc-material_lapis_lazuli: var(--mc-material_lapis);
+}

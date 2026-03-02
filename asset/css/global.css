@@ -1,0 +1,22 @@
+@import url("./reset.css");
+
+@import url("../font/inter/font.css");
+
+:root {
+  --black: #000000;
+  --white: #ffffff;
+
+  --red: #ff5555;
+  --gold: #ffaa00;
+  --orange: var(--gold);
+  --yellow: #ffff55;
+  --green: #55ff55;
+  --blue: #5555ff;
+  --dark_purple: --accent-main: var(--red);
+
+  --font-header: "Inter";
+}
+
+h1 {
+  font-family: var(--font-header);
+}
