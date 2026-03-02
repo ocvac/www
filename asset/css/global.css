@@ -82,12 +82,33 @@ a {
   width: fit-content;
 }
 
+.back::after {
+  content: "Back";
+}
+
 p {
   font-family: "Inter";
 }
 
 h1 {
   font-family: var(--font-header);
+  font-size: 2rem;
+  border-left: solid 8px var(--accent-main);
+  padding: 0 0 0 12px;
+}
+
+h2 {
+  font-size: 1.64rem;
+  font-weight: 600;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 16/10;
+}
+
+code {
+  background-color: #efefef;
 }
 
 /* CONTENT */
