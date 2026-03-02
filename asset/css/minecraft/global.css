@@ -1,0 +1,22 @@
+@import url("../normalize.css");
+@import url("./colors.css");
+
+@import url("../../font/minecraft/font.css");
+
+:root {
+  --header-font: "Minecraft Ten";
+  --main-font: "Minecraft Seven";
+}
+body {
+  font-family: var(--main-font);
+}
+
+h1 {
+  font-family: var(--header-font);
+  font-weight: 400;
+}
+
+h2 {
+  font-family: var(--header-font);
+  font-weight: 400;
+}
