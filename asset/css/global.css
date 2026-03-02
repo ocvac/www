@@ -7,16 +7,105 @@
   --white: #ffffff;
 
   --red: #ff5555;
-  --gold: #ffaa00;
-  --orange: var(--gold);
-  --yellow: #ffff55;
-  --green: #55ff55;
   --blue: #5555ff;
-  --dark_purple: --accent-main: var(--red);
+  --accent-main: var(--red);
 
+  font-size: 18px;
   --font-header: "Inter";
+
+  --copyright-text: "Copyright 2026 Ocvac";
+
+  --content-width: 640px;
+}
+
+body {
+  font-size: 1rem;
+  background-color: var(--black);
+}
+
+a {
+  color: var(--blue);
+}
+
+/* BANNER */
+
+.banner {
+  width: 100%;
+  background-color: var(--accent-main);
+  display: flex;
+  justify-content: center;
+  filter: drop-shadow(0 0 6px #00000048);
+  z-index: 100;
+  position: sticky;
+  top: 0;
+}
+
+.banner__content {
+  width: var(--content-width);
+}
+
+.banner * {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.banner h1 {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 3rem;
+}
+
+/* BANNER */
+
+/* CONTENT */
+
+.wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: calc(var(--content-width) / 10) 0 0 0;
+  background-color: #fafafa;
+}
+
+.content {
+  width: var(--content-width);
+  background-color: #fff;
+  filter: drop-shadow(0 0 6px #00000024);
+  padding: 24px;
+  border-radius: 12px 12px 0 0;
+  font-family: "Inter";
+}
+
+.back {
+  text-decoration: underline;
+  color: var(--blue);
+  width: fit-content;
+}
+
+p {
+  font-family: "Inter";
 }
 
 h1 {
   font-family: var(--font-header);
 }
+
+/* CONTENT */
+
+/* FOOTER */
+
+.footer {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: var(--font-header);
+  padding: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright::after {
+  content: var(--copyright-text);
+}
+
+/* FOOTER */
