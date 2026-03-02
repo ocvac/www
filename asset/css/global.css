@@ -88,21 +88,10 @@ code {
   background-color: #efefef;
 }
 
-.projects {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  background-color: #efefef;
-  padding: 4px;
-}
-
-.project {
-  background-color: var(--white);
-  padding: 12px;
-}
-
-.project * {
-  margin: 0;
+hr {
+  margin: 32px 0 16px 0;
+  border-color: #000000;
+  opacity: 0.12;
 }
 
 /* CONTENT */

@@ -9,8 +9,9 @@
 
   --blue: #5555ff;
 
-  --h1-size: 2.5rem;
-  --h2-size: 1.5rem;
+  --h1-size: 2.48rem;
+  --h2-size: 2.24rem;
+  --h3-size: 1.48rem;
   --p-size: 1rem;
 }
 
@@ -38,6 +39,13 @@ h1 {
 h2 {
   font-size: var(--h2-size);
   margin: 12px 0 0 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: var(--h3-size);
+  font-weight: 600;
+  margin: 12px 0 0 0;
 }
 
 p {
@@ -48,4 +56,8 @@ p {
 a {
   color: var(--blue);
   text-decoration: underline;
+}
+
+code {
+  user-select: all;
 }
