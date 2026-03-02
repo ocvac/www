@@ -29,9 +29,7 @@ Read about that at https://minecraft.wiki/w/Formatting_codes */
   --mc-white: #ffffff;
 
   /* Bedrock exclusive */
-
   --mc-minecoin_gold: #ddd605; /* yuck */
-
   --mc-material_quartz: #e3d4d1;
   --mc-material_iron: #cecaca;
   --mc-material_netherite: #443a3b;
@@ -43,6 +41,12 @@ Read about that at https://minecraft.wiki/w/Formatting_codes */
   --mc-material_lapis: #21497b;
   --mc-material_amethyst: #9a5cc6;
   --mc-material_resin: #eb7114;
+
+  /* Rarity */
+  --mc-common: var(--mc-white);
+  --mc-uncommon: var(--mc-yellow);
+  --mc-rare: var(--mc-aqua);
+  --mc-epic: var(--mc-light_purple);
 
   /* Quality of Life */
   --mc-orange: var(--mc-gold);

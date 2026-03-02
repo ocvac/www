@@ -15,7 +15,6 @@
 }
 
 body {
-  width: 640px; /* Change to 100% if using it with other CSS */
   background-color: var(--background-color);
   color: var(--text-color);
   font-size: 1rem;
