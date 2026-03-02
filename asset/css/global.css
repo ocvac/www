@@ -114,6 +114,24 @@ code {
   background-color: #efefef;
 }
 
+.person {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 12px 0 12px 0;
+}
+
+.person__pfp {
+  width: 1.86rem;
+  /* border-radius: 50%; */
+}
+
+hr {
+  margin: 24px 0;
+  border-color: #fafafa;
+  opacity: 0.64;
+}
+
 /* CONTENT */
 
 /* FOOTER */
