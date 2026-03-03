@@ -165,3 +165,31 @@ h3 a {
   color: var(--background);
   height: 128px;
 }
+
+@media (orientation: portrait) {
+  .content {
+    margin: 0;
+  }
+
+  .minecraft_content h1 {
+    font-size: 2.4rem;
+    line-height: 1;
+    margin: 0 0 12px 0;
+    text-align: center;
+  }
+
+  .minecraft_content p {
+    font-size: 1.24rem;
+    text-align: center;
+  }
+
+  .button {
+    width: 100%;
+    font-size: 1.24rem;
+    text-align: center;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+}
