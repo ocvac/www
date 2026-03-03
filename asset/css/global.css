@@ -12,7 +12,7 @@
 }
 
 body {
-  margin: 64px 0 0 0;
+  margin: 48px 0;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -49,8 +49,6 @@ h1 {
 .linkbar {
   display: flex;
   justify-content: space-between;
-  position: sticky;
-  top: 0;
   font-size: 1.24rem;
   font-weight: 500;
 }
@@ -74,7 +72,7 @@ h1 {
   padding: 48px;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(5px) brightness(32%) grayscale(64%);
+  background-color: #000000aa;
   color: #fff;
 }
 
@@ -84,6 +82,18 @@ h1 {
   padding: 12px 24px;
   border-radius: 6px;
   font-weight: 800;
+}
+
+.depth_border {
+  border-top: solid 4px #ffffff24;
+  border-right: solid 4px #00000024;
+  border-bottom: solid 4px #00000024;
+  border-left: solid 4px #ffffff24;
+}
+
+.button_secondary {
+  background-color: #dedede;
+  color: #000;
 }
 
 .horizontal_3 {
@@ -105,4 +115,13 @@ h3 a {
   width: 32px;
   image-rendering: pixelated;
   margin: 0 12px 0 0;
+}
+
+.spacer {
+  height: 32px;
+}
+
+.flex {
+  display: flex;
+  gap: 24px;
 }
