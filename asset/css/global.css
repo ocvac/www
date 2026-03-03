@@ -6,6 +6,8 @@
   --black: #000000;
   --white: #ffffff;
 
+  --offwhite: #efefef;
+
   --red: #ff5555;
   --blue: #5555ff;
   --accent-main: var(--red);
@@ -35,23 +37,30 @@ a {
   z-index: 100;
   /* position: sticky;
   top: -128px; */
-  padding: 128px 0 0 0;
+  padding: 12px;
+  line-height: 1;
+  background-color: #fff;
+  border-bottom: solid 2px var(--offwhite);
 }
 
 .banner__content {
-  width: var(--content-width);
+  width: 100%;
 }
 
-.banner * {
-  color: var(--white);
-  text-decoration: none;
-}
-
-.banner h1 {
+.banner h1,
+.banner a {
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 300;
   font-size: 3.6rem;
   text-align: left;
+  color: var(--black);
+  text-decoration: none;
+  letter-spacing: -3px;
+}
+
+img {
+  opacity: 0.8;
+  border-radius: 128px;
 }
 
 /* BANNER */
@@ -63,13 +72,15 @@ a {
   display: flex;
   justify-content: center;
   padding: calc(var(--content-width) / 8) 0 0 0;
-  background-color: #fafafa;
+  background: linear-gradient(to top, #ccccff, #ffffff);
 }
 
 .content {
   width: var(--content-width);
-  background-color: #fff;
-  filter: drop-shadow(0 0 6px #00000024);
+  background-color: transparent;
+  /* filter: drop-shadow(0 0 2px #00000024); */
+  /* border: solid 2px #efefef; */
+  border-bottom: none;
   padding: 24px;
   border-radius: 24px 24px 0 0;
   font-family: "Inter";
@@ -90,8 +101,9 @@ code {
 
 hr {
   margin: 32px 0 16px 0;
-  border-color: #000000;
-  opacity: 0.12;
+  border: none;
+  border: solid 1px #efefef00;
+  box-shadow: none;
 }
 
 /* CONTENT */
