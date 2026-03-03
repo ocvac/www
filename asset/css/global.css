@@ -74,7 +74,7 @@ h1 {
   padding: 48px;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(5px) brightness(32%);
+  backdrop-filter: blur(5px) brightness(32%) grayscale(64%);
   color: #fff;
 }
 
