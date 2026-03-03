@@ -117,6 +117,18 @@ h3 a {
   margin: 0 12px 0 0;
 }
 
+.small_logo {
+  width: 24px;
+  image-rendering: pixelated;
+  margin: 0 12px 0 0;
+}
+
+.align_right {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
 .spacer {
   height: 32px;
 }
