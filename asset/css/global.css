@@ -1,127 +1,107 @@
-@import url("./normalize.css");
+@import url("./reset.css");
 
 @import url("../font/inter/font.css");
 
 :root {
-  --black: #000000;
-  --white: #ffffff;
+  font-size: 18px;
+  font-family: "Inter";
 
-  --offwhite: #efefef;
+  --accent: #5555ff;
 
-  --red: #ff5555;
-  --blue: #5555ff;
-  --accent-main: var(--red);
-
-  --copyright-text: "Copyright 2026 Ocvac";
-
-  --content-width: 640px;
+  --background: #f9fafb;
 }
 
 body {
-  font-size: 1rem;
-  background-color: var(--black);
-  overscroll-behavior: none;
-}
-
-a {
-  color: var(--blue);
-}
-
-/* BANNER */
-
-.banner {
+  margin: 48px 0 0 0;
   width: 100%;
-  background-color: var(--accent-main);
+  height: 100vh;
   display: flex;
   justify-content: center;
-  z-index: 100;
-  /* position: sticky;
-  top: -128px; */
-  padding: 12px;
-  line-height: 1;
-  background-color: #fff;
-  border-bottom: solid 2px var(--offwhite);
-}
-
-.banner__content {
-  width: 100%;
-}
-
-.banner h1,
-.banner a {
-  text-transform: uppercase;
-  font-weight: 300;
-  font-size: 3.6rem;
-  text-align: left;
-  color: var(--black);
-  text-decoration: none;
-  letter-spacing: -3px;
-}
-
-img {
-  opacity: 0.8;
-  border-radius: 128px;
-}
-
-/* BANNER */
-
-/* CONTENT */
-
-.wrap {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: calc(var(--content-width) / 8) 0 0 0;
-  background: linear-gradient(to top, #ccccff, #ffffff);
+  background: linear-gradient(to top, #ddddff, #fff);
 }
 
 .content {
-  width: var(--content-width);
-  background-color: transparent;
-  /* filter: drop-shadow(0 0 2px #00000024); */
-  /* border: solid 2px #efefef; */
-  border-bottom: none;
-  padding: 24px;
-  border-radius: 24px 24px 0 0;
-  font-family: "Inter";
-}
-
-.back::after {
-  content: "Back";
-}
-
-iframe {
-  width: 100%;
-  aspect-ratio: 16/10;
-}
-
-code {
-  background-color: #efefef;
+  filter: drop-shadow(0 0 12px #00000024);
+  width: 1024px;
+  border: solid 1px #cccccc;
+  height: fit-content;
 }
 
 hr {
-  margin: 32px 0 16px 0;
   border: none;
-  border: solid 1px #efefef00;
-  box-shadow: none;
+  border: solid 1px #cccccc;
+  border-bottom: none;
 }
 
-/* CONTENT */
+p {
+  font-size: 1.12rem;
+}
 
-/* FOOTER */
+h1 {
+  font-size: 3rem;
+}
 
-.footer {
-  background-color: var(--black);
-  color: var(--white);
-  font-family: var(--font-header);
-  padding: 48px;
+.section {
+  padding: 12px;
+  background-color: var(--background);
+}
+
+.linkbar {
   display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  font-size: 1.24rem;
+  font-weight: 500;
+}
+
+.align_left {
+  display: flex;
+  gap: 12px;
+}
+
+.minecraft {
+  background-image: url("../img/mc-tradinghall-1.png");
+  background-position: center;
+  background-size: cover;
+  height: fit-content;
+}
+
+.minecraft_content {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  padding: 48px;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px) brightness(32%);
+  color: #fff;
 }
 
-.copyright::after {
-  content: var(--copyright-text);
+.button {
+  background-color: var(--accent);
+  width: fit-content;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 800;
 }
 
-/* FOOTER */
+.horizontal_3 {
+  display: flex;
+  gap: 12px;
+}
+
+.horizontal_3 div {
+  width: 100%;
+  padding: 24px;
+}
+
+h3 a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.logo {
+  width: 32px;
+  image-rendering: pixelated;
+}
