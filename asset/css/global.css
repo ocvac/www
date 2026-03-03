@@ -9,12 +9,14 @@
   --accent: #5555ff;
 
   --background: #f9fafb;
+  --border-color: #cccccc;
 }
 
 body {
   margin: 48px 0;
   width: 100%;
-  height: 100vh;
+  height: fit-content;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   background: linear-gradient(to top, #ccccff, #fff);
@@ -23,13 +25,13 @@ body {
 .content {
   filter: drop-shadow(0 0 12px #00000048);
   width: 1024px;
-  border: solid 1px #cccccc;
+  border: solid 1px var(--border-color);
   height: fit-content;
 }
 
 hr {
   border: none;
-  border: solid 1px #cccccc;
+  border: solid 1px var(--border-color);
   border-bottom: none;
 }
 
