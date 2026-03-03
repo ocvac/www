@@ -13,7 +13,6 @@
 }
 
 body {
-  margin: 48px 0;
   width: 100%;
   height: fit-content;
   min-height: 100vh;
@@ -23,8 +22,10 @@ body {
 }
 
 .content {
+  margin: 48px 0;
   filter: drop-shadow(0 0 12px #00000048);
   width: 1024px;
+  max-width: 100%;
   border: solid 1px var(--border-color);
   height: fit-content;
 }
@@ -57,7 +58,14 @@ h1 {
 
 .align_left {
   display: flex;
+  align-items: center;
   gap: 12px;
+}
+
+.align_left .link {
+  padding: 0 6px;
+  border-bottom: solid 2px #000;
+  border-top: solid 2px transparent;
 }
 
 .minecraft {
@@ -100,12 +108,14 @@ h1 {
 
 .horizontal_3 {
   display: flex;
+  align-items: center;
   gap: 12px;
 }
 
 .horizontal_3 div {
   width: 100%;
   padding: 24px;
+  aspect-ratio: 8/3;
 }
 
 h3 a {
@@ -138,4 +148,20 @@ h3 a {
 .flex {
   display: flex;
   gap: 24px;
+}
+
+.divider {
+  width: 1px;
+  height: 128px;
+  background-color: var(--border-color);
+}
+
+.footer {
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--background);
+  height: 128px;
 }
