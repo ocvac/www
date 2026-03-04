@@ -1,10 +1,13 @@
 @import url("./reset.css");
 
 @import url("../font/inter/font.css");
+@import url("../font/bricolage-grotesque/font.css");
 
 :root {
   font-size: 18px;
   font-family: "Inter";
+
+  --hero-font: "Bricolage Grotesque";
 
   --accent: #5555ff;
 
@@ -84,6 +87,10 @@ h1 {
   height: 100%;
   background-color: #000000aa;
   color: #fff;
+}
+
+.minecraft_content h1 {
+  font-family: var(--hero-font);
 }
 
 .button {
