@@ -1,4 +1,4 @@
-@import url("./reset.css");
+@import url("./ocvac.css");
 
 @import url("../font/inter/font.css");
 @import url("../font/bricolage-grotesque/font.css");
@@ -8,11 +8,6 @@
   font-family: "Inter";
 
   --hero-font: "Bricolage Grotesque";
-
-  --accent: #5555ff;
-
-  --background: #f9fafb;
-  --border-color: #cccccc;
 }
 
 body {
@@ -91,6 +86,11 @@ h1 {
 
 .minecraft_content h1 {
   font-family: var(--hero-font);
+}
+
+.minecraft_content p {
+  line-height: 1.6;
+  margin: 12px 0 0 0;
 }
 
 .button {

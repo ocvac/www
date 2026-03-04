@@ -1,0 +1,90 @@
+@import url("./colors.css");
+@import url("./reset.css");
+@import url("../font/inter/font.css");
+@import url("../font/bricolage-grotesque/font.css");
+
+:root {
+  font-size: 16px;
+
+  --text-color: #000;
+
+  --header-font: "Bricolage Grotesque";
+
+  --h1-size: 2.48rem;
+  --h2-size: 1.64rem;
+  --h3-size: 1.48rem;
+  --p-size: 1.24rem;
+}
+
+.ocvac-wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+
+.ocvac-content {
+  width: 640px;
+}
+
+ocvac-css {
+  width: 100%;
+  font-family: "Inter";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+ocvac-css hr {
+  border: none;
+  border-bottom: solid 2px var(--border-color);
+  width: 25%;
+  margin: 16px 0;
+}
+ocvac-css p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  width: 100%;
+}
+ocvac-css h1 {
+  font-family: var(--header-font);
+  font-size: var(--h1-size);
+  border-left: solid 6px var(--accent);
+  padding: 18px 0 6px 16px;
+  margin-top: 0;
+}
+
+ocvac-css h2 {
+  font-size: var(--h2-size);
+}
+
+ocvac-css p {
+  width: 100%;
+  font-size: var(--p-size);
+  line-height: 1.6;
+}
+
+ocvac-css p a {
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 12px;
+  background-color: var(--accent);
+  font-weight: 600;
+}
+
+ocvac-css .home {
+  padding: 6px 0 18px 16px;
+  background-color: var(--background);
+  border: solid 6px var(--accent);
+  border-top: none;
+  border-left: none;
+  color: var(--text-color);
+  margin: 0;
+  transform: translate(0, 22px);
+}
