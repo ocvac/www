@@ -28,13 +28,18 @@
   width: 640px;
 }
 
+ocvac-css * {
+  padding: 0;
+  margin: 0;
+}
+
 ocvac-css {
   width: 100%;
   font-family: "Inter";
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 0px;
 }
 
 ocvac-css hr {
@@ -43,6 +48,7 @@ ocvac-css hr {
   width: 25%;
   margin: 16px 0;
 }
+
 ocvac-css p,
 h1,
 h2,
@@ -52,16 +58,20 @@ h5,
 h6 {
   width: 100%;
 }
+
 ocvac-css h1 {
   font-family: var(--header-font);
   font-size: var(--h1-size);
-  border-left: solid 6px var(--accent);
-  padding: 18px 0 6px 16px;
+  border-left: solid 8px var(--accent);
+  font-weight: 600;
+  padding: 6px 0 6px 16px;
   margin-top: 0;
 }
 
 ocvac-css h2 {
+  font-family: var(--header-font);
   font-size: var(--h2-size);
+  margin: 12px 0 0 0;
 }
 
 ocvac-css p {

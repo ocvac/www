@@ -1,0 +1,45 @@
+.linkbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.24rem;
+  font-weight: 500;
+}
+
+.linkbar div {
+  height: 32px;
+}
+
+.linkbar_left img {
+  image-rendering: pixelated;
+}
+
+.linkbar_left {
+  width: 32px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.linkbar_center {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkbar_right {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: fit-content;
+}
+
+.linkbar_right a {
+  height: 100%;
+  padding: 2px;
+}
+
+.linkbar_right a img {
+  height: 100%;
+}
